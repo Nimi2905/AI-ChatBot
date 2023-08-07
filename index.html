@@ -2,51 +2,41 @@
 <html>
 
 	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-		<title>Movie Pitch</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KnowItAll</title>
+		<link rel="stylesheet" href="index.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap"
-		rel="stylesheet">
-		<link rel="stylesheet" href="index.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
-		<header>
-			<img src="./images/logo-movie.png" alt="MoviePitch">
-			<a href="/"><span>Movie</span>Pitch</a>
-		</header>
-		<main>	
-			<!-- The Setup -->	
-			<section id="setup-container">
-				<div class="setup-inner">
-					<img src="/images/movieboss.png">
-					<div class="speech-bubble-ai" id="speech-bubble-ai">
-						<p id="movie-boss-text">
-							Give me a one-sentence concept and I'll give you an eye-catching title, a synopsis the studios will love, a movie poster...
-							AND choose the cast!
-						</p>
+		<main>
+			<section class="chatbot-container">
+				<div class="chatbot-header">
+					<img src="images/owl-logo.png" class="logo">
+					<h1>KnowItAll</h1>
+					<h2>Ask me anything!</h2>
+					<p class="supportId">User ID: 2344</p>
+					<button class="clear-btn" id="clear-btn">start over</button>
+				</div>
+				<div class="chatbot-conversation-container" id="chatbot-conversation">
+					<div class="speech speech-ai">
+						How can I help you?
 					</div>
 				</div>
-				<div class="setup-inner setup-input-container" id="setup-input-container">
-					<textarea id="setup-textarea" placeholder="An evil genius wants to take over the world using AI."></textarea>
-					<button class="send-btn" id="send-btn" aria-label="send">
-							<img src="images/send-btn-icon.png" alt="send">
+				<form id="form" class="chatbot-input-container">
+					<input name="user-input" type="text" id="user-input" required>
+					<button id="submit-btn" class="submit-btn">
+						<img 
+							src="images/send-btn-icon.png" 
+							class="send-btn-icon"
+						>
 					</button>
-				</div>
-			</section>	
-			<!-- The Output -->	
-			<section class="output-container" id="output-container">
-				<div id="output-img-container" class="output-img-container"></div>
-				<h1 id="output-title"></h1>
-				<h2 id="output-stars"></h2>
-				<p id="output-text"></p>
+				</form>
 			</section>
-		</main>	
-		<footer>
-			&copy; 2023 MoviePitch All rights reserved
-		</footer>
+		</main>
 		<script type="module" src="index.js"></script>
+		
 	</body>
 
 </html>
