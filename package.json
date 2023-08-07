@@ -1,7 +1,8 @@
 {
   "name": "project",
   "dependencies": {
-    "openai": "^3.3.0"
+    "firebase": "^10.1.0",
+    "openai": "3.2.1"
   },
   "devDependencies": {
     "vite": "latest"
